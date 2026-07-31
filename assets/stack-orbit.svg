@@ -1,0 +1,32 @@
+<svg width="1000" height="300" viewBox="0 0 1000 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="orbitAccent" x1="160" y1="40" x2="840" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38E8FF"/>
+      <stop offset="0.5" stop-color="#7B61FF"/>
+      <stop offset="1" stop-color="#FF4FD8"/>
+    </linearGradient>
+    <filter id="orbitGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <path id="orbit1" d="M210 150C210 82 340 40 500 40C660 40 790 82 790 150C790 218 660 260 500 260C340 260 210 218 210 150Z"/>
+    <path id="orbit2" d="M325 150C325 90 405 65 500 65C595 65 675 90 675 150C675 210 595 235 500 235C405 235 325 210 325 150Z"/>
+  </defs>
+  <rect width="1000" height="300" rx="24" fill="#070A12"/>
+  <rect x="1" y="1" width="998" height="298" rx="23" stroke="url(#orbitAccent)" stroke-opacity="0.22"/>
+  <path d="M120 150H880" stroke="#64708C" stroke-opacity="0.08"/>
+  <path d="M500 28V272" stroke="#64708C" stroke-opacity="0.08"/>
+  <use href="#orbit1" stroke="#6E7B98" stroke-opacity="0.22" stroke-dasharray="6 12"/>
+  <use href="#orbit2" stroke="#6E7B98" stroke-opacity="0.22" stroke-dasharray="4 10"/>
+  <circle cx="500" cy="150" r="58" fill="#0D1424" stroke="url(#orbitAccent)" stroke-opacity="0.75"/>
+  <circle cx="500" cy="150" r="45" stroke="#FFFFFF" stroke-opacity="0.06"/>
+  <text x="500" y="144" text-anchor="middle" fill="#F5F7FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="750" letter-spacing="2">FULL STACK</text>
+  <text x="500" y="168" text-anchor="middle" fill="#7D8AA7" font-family="ui-monospace, Menlo, monospace" font-size="10" letter-spacing="2">SYSTEM CORE</text>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="11" letter-spacing="1.3">
+    <g><circle r="8" fill="#38E8FF" filter="url(#orbitGlow)"/><text x="14" y="4" fill="#C9F9FF">FRONTEND</text><animateMotion dur="14s" repeatCount="indefinite"><mpath href="#orbit1"/></animateMotion></g>
+    <g><circle r="8" fill="#7B61FF" filter="url(#orbitGlow)"/><text x="14" y="4" fill="#E0DAFF">BACKEND</text><animateMotion dur="14s" begin="-3.5s" repeatCount="indefinite"><mpath href="#orbit1"/></animateMotion></g>
+    <g><circle r="8" fill="#FF4FD8" filter="url(#orbitGlow)"/><text x="14" y="4" fill="#FFD8F5">DATABASE</text><animateMotion dur="14s" begin="-7s" repeatCount="indefinite"><mpath href="#orbit1"/></animateMotion></g>
+    <g><circle r="8" fill="#56F1A8" filter="url(#orbitGlow)"/><text x="14" y="4" fill="#D6FFEB">CLOUD</text><animateMotion dur="14s" begin="-10.5s" repeatCount="indefinite"><mpath href="#orbit1"/></animateMotion></g>
+    <g><circle r="7" fill="#78C8FF"/><text x="13" y="4" fill="#D8EEFF">AI</text><animateMotion dur="10s" repeatCount="indefinite"><mpath href="#orbit2"/></animateMotion></g>
+    <g><circle r="7" fill="#B999FF"/><text x="13" y="4" fill="#EBE1FF">SECURITY</text><animateMotion dur="10s" begin="-3.33s" repeatCount="indefinite"><mpath href="#orbit2"/></animateMotion></g>
+    <g><circle r="7" fill="#FF83E7"/><text x="13" y="4" fill="#FFE0F8">DEVOPS</text><animateMotion dur="10s" begin="-6.66s" repeatCount="indefinite"><mpath href="#orbit2"/></animateMotion></g>
+  </g>
+</svg>

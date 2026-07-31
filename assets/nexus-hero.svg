@@ -1,0 +1,104 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#05070D"/>
+      <stop offset="0.48" stop-color="#0A1020"/>
+      <stop offset="1" stop-color="#090511"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="280" y1="80" x2="900" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38E8FF"/>
+      <stop offset="0.5" stop-color="#7B61FF"/>
+      <stop offset="1" stop-color="#FF4FD8"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientTransform="translate(214 78) rotate(18) scale(410 220)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1FE6FF" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#1FE6FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientTransform="translate(1020 280) rotate(-160) scale(430 250)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D247FF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#D247FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" stroke="#97A4C6" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="panelShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <clipPath id="panelClip"><rect x="70" y="45" width="1060" height="270" rx="26"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="360" rx="30" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="30" fill="url(#glowA)"/>
+  <rect width="1200" height="360" rx="30" fill="url(#glowB)"/>
+  <rect width="1200" height="360" rx="30" fill="url(#grid)">
+    <animate attributeName="opacity" values="0.7;0.35;0.7" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <g filter="url(#panelShadow)">
+    <rect x="70" y="45" width="1060" height="270" rx="26" fill="#0A0F1C" fill-opacity="0.74" stroke="url(#accent)" stroke-opacity="0.48"/>
+  </g>
+
+  <g clip-path="url(#panelClip)">
+    <rect x="70" y="43" width="1060" height="3" fill="url(#accent)" opacity="0.9">
+      <animate attributeName="x" values="-1050;1130" dur="4.8s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="180;340;180" dur="4.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="70" y="45" width="1060" height="70" fill="#FFFFFF" opacity="0.018"/>
+    <rect x="70" y="0" width="1060" height="34" fill="url(#accent)" opacity="0.05">
+      <animate attributeName="y" values="50;300;50" dur="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <circle cx="102" cy="75" r="5" fill="#38E8FF" filter="url(#softGlow)">
+    <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="118" y="80" fill="#A8B4CE" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="2">NEXUS PROFILE // SYSTEM ONLINE</text>
+  <text x="950" y="80" fill="#6F7C99" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.5">BUILD 2026.08</text>
+
+  <g transform="translate(105 118)">
+    <text x="0" y="36" fill="#F5F7FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="55" font-weight="800" letter-spacing="3">MRIDUL</text>
+    <rect x="0" y="57" width="510" height="2" fill="url(#accent)" opacity="0.8"/>
+    <text x="0" y="95" fill="#C9D1E5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="21" letter-spacing="4">FULL-STACK DEVELOPER</text>
+    <text x="0" y="132" fill="#75819D" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="2">FRONTEND  /  BACKEND  /  AI SYSTEMS  /  SECURITY</text>
+    <g transform="translate(0 154)">
+      <rect width="154" height="34" rx="17" fill="#10192B" stroke="#38E8FF" stroke-opacity="0.42"/>
+      <circle cx="18" cy="17" r="4" fill="#38E8FF"><animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/></circle>
+      <text x="32" y="22" fill="#C5F8FF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.2">SHIP. SCALE.</text>
+      <rect x="168" width="176" height="34" rx="17" fill="#141127" stroke="#8C6CFF" stroke-opacity="0.48"/>
+      <text x="190" y="22" fill="#DED6FF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.2">SECURE. EVOLVE.</text>
+    </g>
+  </g>
+
+  <g transform="translate(810 170)">
+    <circle r="94" stroke="#5E6B88" stroke-opacity="0.22"/>
+    <circle r="68" stroke="#38E8FF" stroke-opacity="0.34" stroke-dasharray="7 11">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="42" stroke="#FF4FD8" stroke-opacity="0.42" stroke-dasharray="4 8">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="16" fill="#0E1729" stroke="url(#accent)"/>
+    <circle r="5" fill="#F4F7FF" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="-68" r="5" fill="#38E8FF" filter="url(#softGlow)"/>
+    <circle cx="59" cy="34" r="5" fill="#8C6CFF" filter="url(#softGlow)"/>
+    <circle cx="-59" cy="34" r="5" fill="#FF4FD8" filter="url(#softGlow)"/>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4">
+    <text x="925" y="138" fill="#8490AA">UI LAYER</text>
+    <line x1="900" y1="143" x2="856" y2="158" stroke="#38E8FF" stroke-opacity="0.4"/>
+    <text x="939" y="184" fill="#8490AA">API CORE</text>
+    <line x1="915" y1="181" x2="879" y2="176" stroke="#8C6CFF" stroke-opacity="0.4"/>
+    <text x="918" y="232" fill="#8490AA">DATA / AI</text>
+    <line x1="902" y1="225" x2="862" y2="205" stroke="#FF4FD8" stroke-opacity="0.4"/>
+  </g>
+
+  <path d="M0 327H1200" stroke="url(#accent)" stroke-opacity="0.22"/>
+  <text x="72" y="344" fill="#56627C" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="2">PRIVATE BUILDS • PUBLIC ENGINEERING IDENTITY • PRODUCTION-MINDED EXECUTION</text>
+</svg>
