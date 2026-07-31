@@ -167,7 +167,6 @@ A next-generation modular Formula racing platform planned across static race int
 [▓▓▓▓▓▓▓▓░░] Strengthen full-stack engineering
 [▓▓▓▓▓▓░░░░] Improve independent problem solving
 [▓▓▓▓░░░░░░] Expand public technical documentation
-[▓▓▓░░░░░░░] Prepare for 2027 placement interviews
 ```
 
 <div align="center">
