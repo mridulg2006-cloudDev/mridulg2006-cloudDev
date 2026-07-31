@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/nexus-hero.svg" width="100%" alt="Mridul Gupta — Full-Stack Developer" />
+  <img src="./assets/nexus-hero.svg" width="100%" alt="Mridul — Full-Stack Developer" />
 </div>
 
 <div align="center">
@@ -17,7 +17,7 @@
 ## `01 // Developer Console`
 
 ```yaml
-identity: Mridul
+identity: Mridul Gupta 
 role: Frontend + Backend Developer
 engineering_focus:
   - Full-stack product development
@@ -26,7 +26,6 @@ engineering_focus:
   - Security and reverse-engineering platforms
   - Real-time Formula racing experiences
 current_mode: Building independently, validating carefully, shipping progressively
-placement_target: 2027
 ```
 
 I build products across the complete application path: **interface, API, data, automation, deployment and iteration**. My repositories are organized as an evolving engineering portfolio rather than a collection of disconnected tutorials.
